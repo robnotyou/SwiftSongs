@@ -25,10 +25,33 @@ class Songs {
 extension Songs {
     
     func Beatles() {
-        let yeahYeahYeah = Polarity.affirmation(aff: "Yeah, Yeah, Yeah")
+        
+        // perfect
+        
         she.loves(you)
         
+        // good
+        
+        if i.fell(.inLoveWithYou),
+            you.would(.promiseToBeTrue) && you.help(me, .understand) {
+        }
+        
+        let help: Action? = .help("I need somebody")!
+        
         she.s(.woman)
+        
+        // possible
+        
+        let yeahYeahYeah = Polarity.affirmation("Yeah, Yeah, Yeah")
+        
+        
+        
+        
+        
+        
+        
+        // other
+        
         he.aint(.heavy)
     }
 }

@@ -14,6 +14,18 @@ class Person {
     
     func said(_ words: String)  {
     }
+    
+    func fell(_ condition: Condition) -> Bool {
+        return true
+    }
+    
+    func would(_ condition: Condition) -> Bool {
+        return true
+    }
+    
+    func help(_ person: Person, _ condition: Condition) -> Bool {
+        return true
+    }
 }
 
 // MARK: - FirstPerson
@@ -49,10 +61,17 @@ class ThirdPerson: Person {
 
 
 
+// MARK: - Action
+enum Action {
+    case help(_ need: String)
+}
+
+
+
 // MARK: - Polarity
 enum Polarity {
-    case affirmation(aff: String)
-    case negation(neg: String)
+    case affirmation(_ aff: String)
+    case negation(_ neg: String)
 }
 
 
@@ -69,4 +88,13 @@ enum Copula {
 enum Attribute {
     case heavy
     case woman
+}
+
+
+
+// MARK: - Condition
+enum Condition {
+    case inLoveWithYou
+    case promiseToBeTrue
+    case understand
 }
